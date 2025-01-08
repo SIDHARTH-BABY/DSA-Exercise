@@ -3,6 +3,7 @@ function longestOnes(nums, k) {
   let right = 0;
   let zero = 0;
   let length = 0;
+
   let maxLength = 0;
   while (right < nums.length) {
     if (nums[right] === 0) {
@@ -11,7 +12,6 @@ function longestOnes(nums, k) {
     while (zero > k) {
       if (nums[left] === 0) {
         zero--;
-        
       }
       left++;
     }
@@ -19,15 +19,11 @@ function longestOnes(nums, k) {
       length = right - left + 1;
       maxLength = Math.max(length, maxLength);
     }
-    right++
+    right++;
   }
   return maxLength;
 }
 
-
-
-
-
 let nums = [1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0];
 let k = 2;
-console.log(longestOnes(nums,k));
+console.log(longestOnes(nums, k));
