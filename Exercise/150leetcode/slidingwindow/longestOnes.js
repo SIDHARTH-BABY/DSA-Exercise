@@ -27,3 +27,7 @@ function longestOnes(nums, k) {
 let nums = [1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0];
 let k = 2;
 console.log(longestOnes(nums, k));
+
+
+
+// O(2n) ===> time complexity

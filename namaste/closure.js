@@ -28,3 +28,18 @@ y();
 //here is the value will be 100 , because it always refer to the reference to a variable .
 
 //third
+
+
+
+
+//Q . build a button . clicking on that button increases the count by click
+// we can do this by closure , here the sec is lexically inside the attachEvent function
+function attachEvent() {
+  let count = 0;
+  document.getElementById("btn").addEventListener("click", function sec() {
+    console.log("hello", count++);
+  });
+
+}
+
+attachEvent()
