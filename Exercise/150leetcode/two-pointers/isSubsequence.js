@@ -10,6 +10,12 @@ function isSubsequence(num1, num2) {
   while (sec <= numS.length-1) {
     console.log(numF[first] , numS[sec]);
     
+
+
+
+
+
+    
     if (numF[first] === numS[sec]) {
       count++;
       first++;
