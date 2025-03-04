@@ -1,12 +1,24 @@
-const promise = new Promise((res, rej) => {
-  document.getElementById("btn1").addEventListener("click", () => {
-    res("btn clicked");
-  });
-});
-// promise.then((res) => console.log(res).catch((val) => console.log(val)));
+document.getElementById("btn1").addEventListener("click", () => {});
 
-async function myFunction() {
-    await promise
-}
+// const promise = new Promise((resolve, reject) => {
+//   document.getElementById("btn1").addEventListener("click", () => {
+//     setTimeout(() => {
+//       resolve("sucesss sidharth");
+//     }, 100);
+//   });
+//   document.getElementById("reject").addEventListener("click", () => {
+//     setTimeout(() => {
+//       reject("rejected promise");
+//     }, 100);
+//   });
+// });
 
+// promise.then((val) => console.log(val)).catch((err) => console.log(err));
 
+const myFunc = async () => {
+  setTimeout(() => {
+    console.log("ressolve");
+  }, 1000);
+};
+let val =  myFunc();
+console.log(val);

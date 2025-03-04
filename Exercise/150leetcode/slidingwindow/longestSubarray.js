@@ -2,7 +2,7 @@ function longestSubarray(nums) {
   let curr = 0;
   let prev = 0;
   lz = -1;
-  let len = 0;
+  let len  = 0;
   let sum = 0;
   for (let i = 0; i < nums.length; i++) {
     if (nums[i] === 1) {

@@ -1,0 +1,10 @@
+{
+    "accessibility.verbosity.inlineChat": false,
+    "inlineChat.accessibleDiffView": "off",
+    "inlineChat.lineNaturalLanguageHint": false,
+    "inlineChat.holdToSpeech": false,
+    "editor.acceptSuggestionOnEnter": "on",
+    "editor.inlineSuggest.edits.renderSideBySide": "never",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.inlineSuggest.enabled": false
+}
