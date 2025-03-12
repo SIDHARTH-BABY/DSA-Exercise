@@ -27,7 +27,7 @@ const object = [
 
 function groupObject(data) {
   let result = {};
-  data.map((val) => {
+  data.forEach((val) => {
     if (result[val.key]) {
       result[val.key].push(val);
     } else {
