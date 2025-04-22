@@ -3,11 +3,12 @@
 
 // shallow copy array
 
-const val = [1, 2, 3, 4];
+const val = [1, 2, 3, 4,[7]];
 
 let val2 = [...val];
-val2[0] = 8;
-console.log(val);
+val2[4][0] = 99;
+console.log(val,'and ',val2); 
+// here i edited val2 but the changes reflected to both val2 and val 
 
 // shallow copy object
 const obj1 = {

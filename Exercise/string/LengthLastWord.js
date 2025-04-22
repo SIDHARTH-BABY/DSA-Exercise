@@ -10,5 +10,5 @@ function LengthLastWord(word) {
   }
 }
 
-const s = "a "
+const s = "agjgjg "
 console.log(LengthLastWord(s));
