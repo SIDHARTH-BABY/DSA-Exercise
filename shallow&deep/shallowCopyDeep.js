@@ -43,3 +43,7 @@ obj2Deep.details.city = "Los Angeles";
 
 console.log(obj1Deep.details.city); // "New York" (original remains unchanged ✅)
 console.log(obj2Deep.details.city); // "Los Angeles"
+
+
+
+
