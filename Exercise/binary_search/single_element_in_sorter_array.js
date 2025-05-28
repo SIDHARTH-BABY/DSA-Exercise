@@ -1,4 +1,4 @@
-function singleElement(val) {
+function singleNonDuplicate(val) {
   let start = 0;
   let end = val.length - 1;
   while (start < end) {
@@ -18,4 +18,4 @@ function singleElement(val) {
 }
 
 let nums = [1, 1, 2, 3, 3, 4, 4, 8, 8];
-console.log(singleElement(nums));
+console.log(singleNonDuplicate(nums));

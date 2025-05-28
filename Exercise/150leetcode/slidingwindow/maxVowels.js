@@ -17,6 +17,6 @@ var maxVowels = function (s, k) {
   return maxVowels;
 };
 
-let s = "abciiidef";
+let s = "abcidaf";
 let k = 3;
 console.log(maxVowels(s, k));

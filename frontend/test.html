@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Progress Bar</title>
+  <style>
+    #progress-container {
+      width: 200px;
+      height: 50px;
+      border: 2px solid black;
+      border-radius: 40px;
+      overflow: hidden;
+    }
+
+    #progress-bar {
+      height: 100%;
+      width: 0%;
+      background-color: green;
+      border-radius: 40px;
+      transition: width 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+  <div id="progress-container">
+    <div id="progress-bar"></div>
+  </div>
+
+  <button onclick="updateProgress(25)">25%</button>
+  <button onclick="updateProgress(50)">50%</button>
+  <button onclick="updateProgress(100)">100%</button>
+
+  <script>
+    function updateProgress(percent) {
+      const progressBar = document.getElementById("progress-bar");
+      progressBar.style.width = percent + "%";
+    }
+  </script>
+</body>
+</html>

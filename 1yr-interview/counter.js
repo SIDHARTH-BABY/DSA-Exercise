@@ -19,7 +19,7 @@ const counterModule = (() => {
 
 // Usage:
 console.log(counterModule.increment(1)); // 1
-console.log(counterModule.increment(2)); // 2
+console.log(counterModule.increment(2)); // 3
 console.log(counterModule.reset());     // 0
 console.log(counterModule.increment(5)); // 5
 console.log(counterModule.increment(3)); // 8
