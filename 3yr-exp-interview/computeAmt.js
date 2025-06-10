@@ -33,22 +33,22 @@ console.log(new computeAmount().lacs(15).crores(5).val());
 
 
 
-console.log(init)
-let val = init
-console.log(val)
+// console.log(init)
+// let val = init
+// console.log(val)
 
-const increment = () => {
-    return ++val
-}
-const decrement = () => {
-    return --val
-}
-const reset = () => {
-    val = init
-    return init
-}
-    return {
-        increment,
-        decrement,
-        reset
-    }
+// const increment = () => {
+//     return ++val
+// }
+// const decrement = () => {
+//     return --val
+// }
+// const reset = () => {
+//     val = init
+//     return init
+// }
+//     return {
+//         increment,
+//         decrement,
+//         reset
+//     }

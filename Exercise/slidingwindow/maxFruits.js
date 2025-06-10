@@ -1,27 +1,22 @@
 const maxFruits = (fruits) => {
+  let maxLen = 0;
   let left = 0;
-  let right = 0;
-  let res = [];
-  let count = 0;
-  while (right < fruits.length) {
-    if (count > 2) {
-      while (count > 2) {
-        if (res.includes(fruits[left])) {
-          left++;
-          res.shift();
-          count--;
-        }
+  let map = new Map();
+  for (let right = 0; right < fruits.length; right++) {
+    const fruit = fruits[right];
+    map.set(fruit, (map.get(fruit) || 0) + 1);
+
+    while (map.size > 2) {
+      const leftFruit = fruits[left];
+      map.set(leftFruit, map.get(leftFruit) - 1);
+      if (map.get(leftFruit) === 0) {
+        map.delete(leftFruit);
       }
+      left++;
     }
-    if (res.includes(fruits[right])) {
-      res.push(fruits[right]);
-      right++;
-    } else {
-      count++;
-      res.push(fruits[right]);
-    }
+    maxLen = Math.max(maxLen, right - left + 1);
   }
-  return res
+  return maxLen;
 };
 
 const fruits = [1, 2, 3, 2, 2];

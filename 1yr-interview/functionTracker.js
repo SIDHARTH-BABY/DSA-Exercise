@@ -6,7 +6,20 @@ function tracker() {
   };
 }
 
+
 let counter = tracker();
 console.log(counter());
 console.log(counter());
 console.log(counter());
+
+
+
+// const obj ={'val':'dfd'}
+
+// function object(obj){
+// for (let key in obj){
+//   console.log(key)
+// }
+// }
+
+// object(obj)

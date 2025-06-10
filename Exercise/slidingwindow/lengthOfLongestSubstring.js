@@ -8,10 +8,12 @@ var lengthOfLongestSubstring = function (s) {
             charSet.delete(s[left]);
             left++;
         }
+        console.log(charSet)
         charSet.add(s[right]);
         maxLength = Math.max(maxLength, right - left + 1);
     }
     return maxLength;
 };
+
 
 console.log(lengthOfLongestSubstring("abcabcbb"));
