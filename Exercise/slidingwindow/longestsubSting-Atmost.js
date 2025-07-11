@@ -8,7 +8,6 @@ function longestSubstring(char, k) {
     map.set(val, (map.get(val) || 0) + 1);
     while (map.size > k) {
       const leftChar = s[left];
-      map(char[left]--);
       map.set(leftChar, map.get(leftChar) - 1);
 
       if (map.get(leftChar) === 0) {
@@ -22,7 +21,6 @@ function longestSubstring(char, k) {
   return maxLen;
 }
 
-
-let s = "aaabb";
+let s = "aaabwbvvvsdad";
 let k = 3;
 console.log(longestSubstring(s, k));

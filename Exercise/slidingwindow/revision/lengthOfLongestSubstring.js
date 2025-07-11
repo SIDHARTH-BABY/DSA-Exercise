@@ -14,6 +14,6 @@ function lengthOfLongestSubstring(s) {
   return maxLen
 }
 
-let s = "abcabcbb";
+let s = "abcsabcbb";
 
 console.log(lengthOfLongestSubstring(s));

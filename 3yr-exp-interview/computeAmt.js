@@ -1,23 +1,19 @@
 function computeAmount() {
-  let totalAmt = 0
+  let amt = 0;
   this.lacs = (amount) => {
-    totalAmt += amount * 100000;
-    return this
+    amt += amount * 100000;
+    return this;
   };
   this.crores = (amount) => {
-    totalAmt += amount * 1000000;
-    return this
+    amt += amount * 10000000;
+    return this;
   };
   this.val = () => {
-    return totalAmt;
+    return amt;
   };
 }
 
 console.log(new computeAmount().lacs(15).crores(5).val());
-
-
-
-
 
 // The this keyword refers to the object that is currently being constructed or used. In your code:
 
@@ -26,12 +22,8 @@ console.log(new computeAmount().lacs(15).crores(5).val());
 // Using this enables method chaining: each method modifies the same object and returns it.
 
 // IMP
-// {return this} is essential for method chaining, allowing multiple method calls on the same object in a single statement.  
+// {return this} is essential for method chaining, allowing multiple method calls on the same object in a single statement.
 // Without {return this}, the intermediate calls wouldn't work because they wouldn't return the object needed for chaining.
-
-
-
-
 
 // console.log(init)
 // let val = init

@@ -1,14 +1,20 @@
-function LengthLastWord(word) {
-  let newWord = word.split(" ");
-  console.log(newWord);
-  for (let i = newWord.length - 1; i >= 0; i--) {
-    console.log(newWord[i],'mmm');
-    if (newWord[i] != "") {
-        console.log(newWord[i],'yy');
-      return newWord[i].length;
+function lengthOfLastWord(words) {
+  let flag = false;
+  let count = 0;
+  for (let i = words.length - 1; i >= 0; i--) {
+    if (words[i] === " ") {
+      flag = true;
+      if (count > 0 && flag) {
+        return count;
+      }
+    } else {
+      count++;
     }
+  }
+  if(count){
+    return count
   }
 }
 
-const s = "agjgjg "
-console.log(LengthLastWord(s));
+const s = " a ";
+console.log(lengthOfLastWord(s));
