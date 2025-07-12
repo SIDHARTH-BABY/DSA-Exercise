@@ -1,29 +1,25 @@
-const count = ((val) => {
-  let counter = 0;
+const counterModule = (() => {
+  let currentCount = 0;
 
-  return function () {
-    counter++;
-    return counter;
+  const increment = (val) => {
+    currentCount += val;
+    return currentCount;
   };
 
   const reset = () => {
-    prevCount = 0;
-    return prevCount;
+    currentCount = 0;
+    return currentCount;
   };
 
-  // const count = (val) => {
-  //   prevCount = prevCount + val;
-  //   return prevCount;
-  // };
   return {
+    increment,
     reset,
   };
 })();
 
-let countFun = count();
-
-console.log(count());
-console.log(count());
-console.log(countFun.reset());
-console.log(count());
-console.log(count());
+// Usage:
+console.log(counterModule.increment(1)); // 1
+console.log(counterModule.increment(2)); // 3
+console.log(counterModule.reset());     // 0
+console.log(counterModule.increment(5)); // 5
+console.log(counterModule.increment(3)); // 8

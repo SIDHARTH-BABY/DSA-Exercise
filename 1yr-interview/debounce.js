@@ -3,10 +3,10 @@
 //if user enters "I" --> it will make an api call gets data , "IP" then it will those datas, but if the user is speed enough , then we can skip the previous letters api calls
 
 function debounce(printn, delay) {
-  let id;
-  return function optimiseFn(...args) {
-    clearTimeout(id);
-    id = setTimeout(() => {
+  let setTimoutId;
+  return function (...args) {
+    clearTimeout(setTimoutId);
+    setTimoutId = setTimeout(() => {
       printn(...args);
     }, delay);
   };

@@ -19,11 +19,14 @@ let output = {
   ],
 };
 
-let res = {};
+function dataTrns(obj) {
+  return obj.reduce((acc, curr) => {
+    if (!acc[curr.key]) {
+      acc[curr.key] = [];
+    }
+    acc[curr.key].push(curr);
 
-obj.map((val) => {
-  if (obj[val.key] === obj.res) {
-  } else {
-    
-  }
-});
+    return acc;
+  }, {});
+}
+console.log(dataTrns(obj));

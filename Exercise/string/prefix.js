@@ -21,6 +21,6 @@ function findPrefix(str) {
   return newItem.join("");
 }
 
-let str = ["flower", "flow", "flight"];
+let str = ["flower", "flow", "fslight"];
 
 console.log(findPrefix(str));
