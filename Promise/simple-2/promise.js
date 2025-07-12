@@ -7,4 +7,4 @@ const promise = new Promise((res, rej) => {
   });
 });
 
-// promise.then((res) => console.log(res)).catch((err) => console.log(err));
+promise.then((res) => console.log(res)).catch((err) => console.log(err));

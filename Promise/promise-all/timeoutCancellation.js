@@ -25,7 +25,7 @@ let cancel = cancellable(random, [1, 2], 1500);
 
 setTimeout(() => {
   cancel(); // Cancels the timeout before 1000ms
-}, 1000);
+}, 2000);
 
 //so here if u r passing 1 ms to the cancellable function , then setTImout will call the function and conosle hte value becuase we put 500 in the second "setTimout cancel()"
 //if hte cancel is called before the passed time then it will execute or we will clear the timeout

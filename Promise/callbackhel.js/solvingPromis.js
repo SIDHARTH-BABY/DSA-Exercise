@@ -1,8 +1,7 @@
 const cart = ["shoes", "footwear"];
 
 function createOrderPromise(cart) {
-  return new Promise((resolve, reject) => {
-    let cardId;
+  return new Promise((resolve, reject) => {   
     resolve(cardId);
   });
 }
