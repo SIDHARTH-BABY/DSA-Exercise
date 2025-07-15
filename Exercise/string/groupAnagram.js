@@ -16,6 +16,7 @@ function groupAnagrams(str) {
 let strs = ["eat", "tea", "tan", "ate", "nat", "bat"];
 console.log(groupAnagrams(strs));
 
+// optimised solution is on another file -> check for that
 
 // time complexity : O (n m log m)
 // space complexity : O (n m)
