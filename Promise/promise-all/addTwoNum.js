@@ -12,7 +12,4 @@ let promise2 = new Promise((resolve) => {
 // addTwoPromises(promise1, promise2).then((result) => {
 //   console.log(result); // Output: 7
 // });
-Promise.all([promise1, promise2]).then((val) =>
-  console.log(val[0]+val[1])
-);
-
+Promise.all([promise1, promise2]).then((val) => console.log(val[0] + val[1]));

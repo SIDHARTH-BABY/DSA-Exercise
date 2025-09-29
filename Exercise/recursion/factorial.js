@@ -9,7 +9,7 @@
 
 // const num = 5;
 
-console.log(factorial(num, 1, 1));
+console.log(factorial(5));
 
 
 // better approach with less space complexity
